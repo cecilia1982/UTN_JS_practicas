@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-----------------------
+  Hola, soy MARIA CECILIA ERCOLE
+ 
+  ESTE ES MI TRABAJO OPCIONAL 1
+  ESPERO LES GUSTE!
+
+  -------------------------->
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <title>&#128526; Seguro No Pagamos Cooperativa</title>
+  </head>
+  <body>
+    <!-----------------------TITULOS---------------------->
+    <div class="titulo"><h1>&#128526; Seguro No Pagamos Cooperativa</h1></div>
+    <div class="subtitulo">
+      <p>&#128073;&#127995; Ingresá tus datos y elegí el #Plan</p>
+    </div>
+
+    <!-------------------FORMULARIO---------------------->
+    <section>
+      <form>
+        <div>
+          <label class="items-form">&#128075; Nombre:</label>
+          <input type="text" name="nombre" />
+        </div>
+        <div>
+          <label class="items-form">&#128083; Apellido:</label>
+          <input type="text" name="apellido" />
+        </div>
+        <div>
+          <label class="items-form">&#128064; DNI:</label>
+          <input type="number" name="dni" />
+        </div>
+        <div>
+          <label class="items-form">&#128140; e-Mail:</label>
+          <input type="mail" name="mail" />
+        </div>
+        <div>
+          <label class="items-form">&#128222; Teléfono:</label>
+          <input type="tel" name="telefono" />
+        </div>
+
+        <div>
+          <label class="items-form">&#128273; Tipo de seguro:</label>
+          <select name="seguro" id="valueSeguro" onchange="seleccionarValor();">
+            <option value=""></option>
+            <option value="$500">Básico</option>
+            <option value="$1000">Intermedio</option>
+            <option value="$1500">Premium</option>
+          </select>
+        </div>
+        <!----------------BOTON------------------->
+        <div>
+          <button type="button">&#128222; Llamá YA!</button>
+        </div>
+      </form>
+
+      <!------------CAJA DE RESULTADOS------------->
+      <div id="resultadoValueSeguro"></div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
